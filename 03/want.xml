@@ -1,0 +1,80 @@
+<!--
+********************************************************************
+*  WANT - A build management tool.                                 *
+*  Copyright (c) 2001 Juancarlo Anez, Caracas, Venezuela.          *
+*  All rights reserved.                                            *
+*  See http://www.suigeneris.org/want/ for details.                *
+*                                                                  *
+********************************************************************
+-->
+<project
+  name="want"
+  basedir="."
+  default="compile">
+
+  <property name="dcu" value="${basedir}/../dcu" />
+
+  <target name="prepare" >
+    <mkdir dir="${dcu}" />
+  </target>
+
+  <target name="compile" depends="prepare">
+
+    <dcc basedir="VariantComp" source="VariantComp.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="Rounding" source="Rounding.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="WinVersion" source="WinVersion.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="StrDemo" source="StrDemo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="MiniSize" source="MiniSize.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="MiniPack" source="MiniPack.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="EuroConv" source="EuroConv.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="ConvDemo" source="ConvDemo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="IfSender" source="IfSender.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="ClassInfo" source="ClassInfo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="FilesList" source="FilesList.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+  </target>
+
+</project>

@@ -1,0 +1,90 @@
+<!--
+********************************************************************
+*  WANT - A build management tool.                                 *
+*  Copyright (c) 2001 Juancarlo Anez, Caracas, Venezuela.          *
+*  All rights reserved.                                            *
+*  See http://www.suigeneris.org/want/ for details.                *
+*                                                                  *
+********************************************************************
+-->
+<project
+  name="want"
+  basedir="."
+  default="compile">
+
+  <property name="dcu" value="${basedir}/../dcu" />
+
+  <target name="prepare" >
+    <mkdir dir="${dcu}" />
+  </target>
+
+  <target name="compile" depends="prepare">
+
+    <dcc basedir="JoinData" source="JoinData.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="DataClone" source="DataClone.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="JetParadox" source="JetParadox.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="JetExcel" source="JetExcel.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="JetText" source="JetText.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="FirstADOExample" source="FirstADOExample.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="DataLinkFile" source="DataLinkFile.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="OpenSchema" source="OpenSchema.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="JetImportExport" source="JetImportExport.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="ClientIndexes" source="ClientIndexes.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="TransProcessing" source="TransProcessing.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="PessimisticLocking" source="PessimisticLocking.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="BatchUpdates" source="BatchUpdates.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+  </target>
+
+</project>

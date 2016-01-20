@@ -1,0 +1,122 @@
+<!--
+********************************************************************
+*  WANT - A build management tool.                                 *
+*  Copyright (c) 2001 Juancarlo Anez, Caracas, Venezuela.          *
+*  All rights reserved.                                            *
+*  See http://www.suigeneris.org/want/ for details.                *
+*                                                                  *
+********************************************************************
+-->
+<project
+  name="want"
+  basedir="."
+  default="compile">
+
+  <property name="dcu" value="${basedir}/../dcu" />
+
+  <target name="prepare" >
+    <mkdir dir="${dcu}" />
+  </target>
+
+  <target name="compile" depends="prepare">
+
+    <echo message="[The following warning is displayed on purpose]"/>
+    <dcc basedir="AbstractAnimals" source="AbstractAnimals.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="TryFinally" source="TryFinally.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="TextProp" source="TextProp.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="Reintr" source="Reintr.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="Protection" source="Protection.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="NewDate" source="NewDate.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="IntfDemo" source="IntfDemo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="Exception1" source="Exceptions1.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="ErrorLog" source="ErrorLog.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="DBGridCol" source="DBGridCol.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="ClassRef" source="ClassRef.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="PolyAnimals" source="PolyAnimals.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="ViewDate" source="Viewdate.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <echo message="[The following warnings are displayed on purpose]"/>
+    <dcc basedir="IfDirective" source="IfDirective.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="FormProp" source="FormProp.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="Dates1" source="Dates1.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="DateProp" source="DateProp.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="DateCopy" source="DateCopy.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="CreateComps" source="CreateComps.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+  </target>
+
+</project>

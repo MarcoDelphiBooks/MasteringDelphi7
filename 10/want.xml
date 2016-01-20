@@ -1,0 +1,110 @@
+<!--
+********************************************************************
+*  WANT - A build management tool.                                 *
+*  Copyright (c) 2001 Juancarlo Anez, Caracas, Venezuela.          *
+*  All rights reserved.                                            *
+*  See http://www.suigeneris.org/want/ for details.                *
+*                                                                  *
+********************************************************************
+-->
+<project
+  name="want"
+  basedir="."
+  default="compile">
+
+  <property name="dcu" value="${basedir}/../dcu" />
+
+  <target name="prepare" >
+    <mkdir dir="${dcu}" />
+  </target>
+
+  <target name="compile" depends="prepare">
+
+    <dcc basedir="PackForm" source="PackWithForm.dpk">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="IntfPack" source="IntfPack.dpk">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="IntfPack" source="IntfFormPack.dpk">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="IntfPack" source="IntfFormPack2.dpk">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="PackInfo" source="PackInfo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="CppDll" source="CallCpp.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="DllMem" source="Usemem.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="DllMem" source="Dllmem.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="DynaCall" source="DynaCall.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="FirstDll" source="Callfrst.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="FirstDll" source="Firstdll.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="FormDll" source="Usecol.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="FormDll" source="Formdll.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="PackForm" source="UsePackForm.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="PackForm" source="DynaPackForm.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="IntfPack" source="UseIntfPack.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="NameTest" source="NameTest.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+  </target>
+
+</project>

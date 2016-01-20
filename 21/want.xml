@@ -1,0 +1,65 @@
+<!--
+********************************************************************
+*  WANT - A build management tool.                                 *
+*  Copyright (c) 2001 Juancarlo Anez, Caracas, Venezuela.          *
+*  All rights reserved.                                            *
+*  See http://www.suigeneris.org/want/ for details.                *
+*                                                                  *
+********************************************************************
+-->
+<project
+  name="want"
+  basedir="."
+  default="compile">
+
+  <property name="dcu" value="${basedir}/../dcu" />
+
+  <target name="prepare" >
+    <mkdir dir="${dcu}" />
+  </target>
+
+  <target name="compile" depends="prepare">
+
+    <dcc basedir="IwGridDemo" source="IWGridDemo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="CgiIntraPage" source="CgiIntra.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="IWScrollData" source="IWScrollData.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="IWTree" source="IWTree.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="IWTwoForms" source="IWTwoForms.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="IWSimpleApp" source="IWSimpleApp.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="IwSession" source="IWSession.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="IWClientGrid" source="IWClientGrid.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+  </target>
+
+</project>

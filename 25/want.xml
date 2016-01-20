@@ -1,0 +1,71 @@
+<!--
+********************************************************************
+*  WANT - A build management tool.                                 *
+*  Copyright (c) 2001 Juancarlo Anez, Caracas, Venezuela.          *
+*  All rights reserved.                                            *
+*  See http://www.suigeneris.org/want/ for details.                *
+*                                                                  *
+********************************************************************
+-->
+<project
+  name="want"
+  basedir="."
+  default="compile">
+
+  <property name="dccilParams" value="-B -Q" />
+
+  <target name="compile">
+
+    <echo message="CLRReflection.dpr"/>
+    <exec basedir="CLRReflection" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} CLRReflection.dpr"/>
+    </exec>
+
+    <echo message="xmldemo.dpr"/>
+    <exec basedir="XmlDemo" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} xmldemo.dpr"/>
+    </exec>
+
+    <echo message="SealedAndFinal.dpr"/>
+    <exec basedir="LanguageTest" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} SealedAndFinal.dpr"/>
+    </exec>
+
+    <echo message="ProtectedPrivate.dpr"/>
+    <exec basedir="LanguageTest" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} ProtectedPrivate.dpr"/>
+    </exec>
+
+    <echo message="ClassHelperDemo.dpr"/>
+    <exec basedir="LanguageTest" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} ClassHelperDemo.dpr"/>
+    </exec>
+
+    <echo message="ClassStatic.dpr"/>
+    <exec basedir="LanguageTest" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} ClassStatic.dpr"/>
+    </exec>
+
+    <echo message="NetAttributes.dpr"/>
+    <exec basedir="LanguageTest" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} NetAttributes.dpr"/>
+    </exec>
+
+    <echo message="ClassInfo.dpr"/>
+    <exec basedir="NetClassInfo" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} ClassInfo.dpr"/>
+    </exec>
+
+    <echo message="EuroConv.dpr"/>
+    <exec basedir="NetEuroConv" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} EuroConv.dpr"/>
+    </exec>
+
+    <echo message="LibSpeed.dpr"/>
+    <exec basedir="NetLibSpeed" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} LibSpeed.dpr"/>
+    </exec>
+
+  </target>
+
+</project>

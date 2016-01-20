@@ -1,0 +1,40 @@
+Borland Developers Conference CD
+@1
+	Borland International
+	US
+Delphi Client/Server
+@1
+	Borland International
+	US
+Delphi Developer's Handbook
+@0
+	Marco Cantù and Tim Gooch
+	Various
+Delphi Informant
+@2
+	Informant Communications Group
+	US
+Mastering Delphi
+@0
+	Marco Cantù
+	Italy
+The Delphi Magazine
+@2
+	ITEC
+	UK
+Thinking in Java
+@1
+	Bruce Eckel
+	US
+marco@marcocantu.com
+@3
+	Marco Cantù
+	Italy
+www.borland.com
+@4
+	Various
+	US
+www.marcocantu.com
+@4
+	Marco Cantù
+	Italy

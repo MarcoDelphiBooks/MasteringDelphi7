@@ -1,0 +1,74 @@
+object Form1: TForm1
+  Left = 259
+  Top = 107
+  Width = 469
+  Height = 488
+  VertScrollBar.Range = 473
+  HorzScrollBar.Range = 457
+  ActiveControl = lbFiles
+  Caption = 'VclToClx'
+  Color = clBackground
+  OnCreate = FormCreate
+  PixelsPerInch = 75
+  TextHeight = 13
+  TextWidth = 6
+  object lbFiles: TListBox
+    Left = 8
+    Top = 48
+    Width = 449
+    Height = 177
+    TabOrder = 0
+  end
+  object btnSource: TButton
+    Left = 120
+    Top = 16
+    Width = 129
+    Height = 25
+    Caption = 'Find Source Files'
+    TabOrder = 1
+    OnClick = btnSourceClick
+  end
+  object btnReplace: TButton
+    Left = 152
+    Top = 240
+    Width = 153
+    Height = 25
+    Caption = 'Do Replace / Rename'
+    TabOrder = 2
+    OnClick = btnReplaceClick
+  end
+  object lvReplace: TListView
+    Left = 8
+    Top = 272
+    Width = 449
+    Height = 201
+    ColumnClick = False
+    ColumnMove = False
+    Columns = <
+      item
+        AllowClick = False
+        Caption = 'Old'
+        MinWidth = 50
+        Tag = 0
+        Width = 140
+      end
+      item
+        AllowClick = False
+        Caption = 'New'
+        MinWidth = 50
+        Tag = 0
+        Width = 140
+      end>
+    RowSelect = True
+    TabOrder = 3
+    ViewStyle = vsReport
+  end
+  object cbRecurse: TCheckBox
+    Left = 264
+    Top = 16
+    Width = 100
+    Height = 25
+    Caption = 'Recurse'
+    TabOrder = 4
+  end
+end

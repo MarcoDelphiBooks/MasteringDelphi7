@@ -1,0 +1,10 @@
+Declare Function GetColor Lib "FormDLL"(Col As Long) As Long
+
+Sub MAIN
+  NewColor = GetColor(0)
+  Print "The code of the color is " + Str$(NewColor)
+  Insert "Red:" + Str$(NewColor Mod 256) + Chr$(13)
+  Insert "Green:" + Str$(Int(NewColor / 256) Mod 256) + Chr$(13)
+  Insert "Blue:" + Str$(Int(NewColor / (256 * 256))) + Chr$(13)
+  
+End Sub

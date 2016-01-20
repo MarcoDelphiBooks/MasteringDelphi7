@@ -1,0 +1,827 @@
+<customers>
+    <customer>
+        <CustNo>1221</CustNo>
+        <Company>Kauai Dive Shoppe</Company>
+        <Addr1>4-976 Sugarloaf Hwy</Addr1>
+        <Addr2>Suite 103</Addr2>
+        <City>Kapaa Kauai</City>
+        <State>HI</State>
+        <Zip>94766-1234</Zip>
+        <Country>US</Country>
+        <Phone>808-555-0269</Phone>
+        <FAX>808-555-0278</FAX>
+        <TaxRate>8.5</TaxRate>
+        <Contact>Erica Norman</Contact>
+        <LastInvoiceDate>2/2/1995 1:05:03 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1231</CustNo>
+        <Company>Unisco</Company>
+        <Addr1>PO Box Z-547</Addr1>
+        <Addr2></Addr2>
+        <City>Freeport</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>Bahamas</Country>
+        <Phone>809-555-3915</Phone>
+        <FAX>809-555-4958</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>George Weathers</Contact>
+        <LastInvoiceDate>11/17/1994 2:10:33 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1351</CustNo>
+        <Company>Sight Diver</Company>
+        <Addr1>1 Neptune Lane</Addr1>
+        <Addr2></Addr2>
+        <City>Kato Paphos</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>Cyprus</Country>
+        <Phone>357-6-876708</Phone>
+        <FAX>357-6-870943</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Phyllis Spooner</Contact>
+        <LastInvoiceDate>10/18/1994 7:20:30 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1354</CustNo>
+        <Company>Cayman Divers World Unlimited</Company>
+        <Addr1>PO Box 541</Addr1>
+        <Addr2></Addr2>
+        <City>Grand Cayman</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>British West Indies</Country>
+        <Phone>011-5-697044</Phone>
+        <FAX>011-5-697064</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Joe Bailey</Contact>
+        <LastInvoiceDate>1/30/1992 2:00:56 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1356</CustNo>
+        <Company>Tom Sawyer Diving Centre</Company>
+        <Addr1>632-1 Third Frydenhoj</Addr1>
+        <Addr2></Addr2>
+        <City>Christiansted</City>
+        <State>St. Croix</State>
+        <Zip>00820</Zip>
+        <Country>US Virgin Islands</Country>
+        <Phone>504-798-3022</Phone>
+        <FAX>504-798-7772</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Chris Thomas</Contact>
+        <LastInvoiceDate>3/20/1992 9:35:40 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1380</CustNo>
+        <Company>Blue Jack Aqua Center</Company>
+        <Addr1>23-738 Paddington Lane</Addr1>
+        <Addr2>Suite 310</Addr2>
+        <City>Waipahu</City>
+        <State>HI</State>
+        <Zip>99776</Zip>
+        <Country>US</Country>
+        <Phone>401-609-7623</Phone>
+        <FAX>401-609-9403</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Ernest Barratt</Contact>
+        <LastInvoiceDate>11/8/1994 11:22:08 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1384</CustNo>
+        <Company>VIP Divers Club</Company>
+        <Addr1>32 Main St.</Addr1>
+        <Addr2></Addr2>
+        <City>Christiansted</City>
+        <State>St. Croix</State>
+        <Zip>02800</Zip>
+        <Country>US Virgin Islands</Country>
+        <Phone>809-453-5976</Phone>
+        <FAX>809-453-5932</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Russell Christopher</Contact>
+        <LastInvoiceDate>2/1/1995 6:45:23 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1510</CustNo>
+        <Company>Ocean Paradise</Company>
+        <Addr1>PO Box 8745</Addr1>
+        <Addr2></Addr2>
+        <City>Kailua-Kona</City>
+        <State>HI</State>
+        <Zip>94756</Zip>
+        <Country>US</Country>
+        <Phone>808-555-8231</Phone>
+        <FAX>808-555-8450</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Paul Gardner</Contact>
+        <LastInvoiceDate>11/9/1994 1:22:22 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1513</CustNo>
+        <Company>Fantastique Aquatica</Company>
+        <Addr1>Z32 999 #12A-77 A.A.</Addr1>
+        <Addr2></Addr2>
+        <City>Bogota</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>Columbia</Country>
+        <Phone>057-1-773434</Phone>
+        <FAX>057-1-773421</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Susan Wong</Contact>
+        <LastInvoiceDate>7/18/1994 5:17:01 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1551</CustNo>
+        <Company>Marmot Divers Club</Company>
+        <Addr1>872 Queen St.</Addr1>
+        <Addr2></Addr2>
+        <City>Kitchener</City>
+        <State>Ontario</State>
+        <Zip>G3N 2E1</Zip>
+        <Country>Canada</Country>
+        <Phone>416-698-0399</Phone>
+        <FAX>426-698-0399</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Joyce Marsh</Contact>
+        <LastInvoiceDate>7/7/1990 4:20:58 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1560</CustNo>
+        <Company>The Depth Charge</Company>
+        <Addr1>15243 Underwater Fwy.</Addr1>
+        <Addr2></Addr2>
+        <City>Marathon</City>
+        <State>FL</State>
+        <Zip>35003</Zip>
+        <Country>US</Country>
+        <Phone>800-555-3798</Phone>
+        <FAX>800-555-0353</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Sam Witherspoon</Contact>
+        <LastInvoiceDate>4/9/1994 8:14:52 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1563</CustNo>
+        <Company>Blue Sports</Company>
+        <Addr1>203 12th Ave. Box 746</Addr1>
+        <Addr2></Addr2>
+        <City>Giribaldi</City>
+        <State>OR</State>
+        <Zip>91187</Zip>
+        <Country>US</Country>
+        <Phone>610-772-6704</Phone>
+        <FAX>610-772-6898</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Theresa Kunec</Contact>
+        <LastInvoiceDate>5/9/1991 12:05:42 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1624</CustNo>
+        <Company>Makai SCUBA Club</Company>
+        <Addr1>PO Box 8534</Addr1>
+        <Addr2></Addr2>
+        <City>Kailua-Kona</City>
+        <State>HI</State>
+        <Zip>94756</Zip>
+        <Country>US</Country>
+        <Phone>317-649-9098</Phone>
+        <FAX>317-649-6787</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Donna Siaus</Contact>
+        <LastInvoiceDate>1/7/1995 1:55:30 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1645</CustNo>
+        <Company>Action Club</Company>
+        <Addr1>PO Box 5451-F</Addr1>
+        <Addr2></Addr2>
+        <City>Sarasota</City>
+        <State>FL</State>
+        <Zip>32274</Zip>
+        <Country>US</Country>
+        <Phone>813-870-0239</Phone>
+        <FAX>813-870-0282</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Michael Spurling</Contact>
+        <LastInvoiceDate>10/18/1993 2:18:06 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1651</CustNo>
+        <Company>Jamaica SCUBA Centre</Company>
+        <Addr1>PO Box 68</Addr1>
+        <Addr2></Addr2>
+        <City>Negril</City>
+        <State>Jamaica</State>
+        <Zip></Zip>
+        <Country>West Indies</Country>
+        <Phone>011-3-697043</Phone>
+        <FAX>011-3-697043</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Barbara Harvey</Contact>
+        <LastInvoiceDate>8/25/1992 12:19:50 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1680</CustNo>
+        <Company>Island Finders</Company>
+        <Addr1>6133 1/3 Stone Avenue</Addr1>
+        <Addr2></Addr2>
+        <City>St Simons Isle</City>
+        <State>GA</State>
+        <Zip>32521</Zip>
+        <Country>US</Country>
+        <Phone>713-423-5675</Phone>
+        <FAX>713-423-5676</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Desmond Ortega</Contact>
+        <LastInvoiceDate>1/2/1995 9:33:40 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>1984</CustNo>
+        <Company>Adventure Undersea</Company>
+        <Addr1>PO Box 744</Addr1>
+        <Addr2></Addr2>
+        <City>Belize City</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>Belize</Country>
+        <Phone>011-34-09054</Phone>
+        <FAX>011-34-09064</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Gloria Gonzales</Contact>
+        <LastInvoiceDate>11/6/1994 4:35:42 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>2118</CustNo>
+        <Company>Blue Sports Club</Company>
+        <Addr1>63365 Nez Perce Street</Addr1>
+        <Addr2></Addr2>
+        <City>Largo</City>
+        <State>FL</State>
+        <Zip>34684</Zip>
+        <Country>US</Country>
+        <Phone>612-897-0342</Phone>
+        <FAX>612-897-0348</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Harry Bathbone</Contact>
+        <LastInvoiceDate>6/8/1990 11:21:06 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>2135</CustNo>
+        <Company>Frank's Divers Supply</Company>
+        <Addr1>1455 North 44th St.</Addr1>
+        <Addr2></Addr2>
+        <City>Eugene</City>
+        <State>OR</State>
+        <Zip>90427</Zip>
+        <Country>US</Country>
+        <Phone>503-555-2778</Phone>
+        <FAX>503-555-2769</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Lloyd Fellows</Contact>
+        <LastInvoiceDate>6/24/1989 10:29:46 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>2156</CustNo>
+        <Company>Davy Jones' Locker</Company>
+        <Addr1>246 South 16th Place</Addr1>
+        <Addr2></Addr2>
+        <City>Vancouver</City>
+        <State>BC</State>
+        <Zip>K8V 9P1</Zip>
+        <Country>Canada</Country>
+        <Phone>803-509-0112</Phone>
+        <FAX>803-509-0553</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Tanya Wagner</Contact>
+        <LastInvoiceDate>11/5/1991 12:20:30 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>2163</CustNo>
+        <Company>SCUBA Heaven</Company>
+        <Addr1>PO Box Q-8874</Addr1>
+        <Addr2></Addr2>
+        <City>Nassau</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>Bahamas</Country>
+        <Phone>011-32-09485</Phone>
+        <FAX>011-32-09485</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Robert Michelind</Contact>
+        <LastInvoiceDate>12/24/1990 7:18:52 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>2165</CustNo>
+        <Company>Shangri-La Sports Center</Company>
+        <Addr1>PO Box D-5495</Addr1>
+        <Addr2></Addr2>
+        <City>Freeport</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>Bahamas</Country>
+        <Phone>011-32-08574</Phone>
+        <FAX>011-32-44938</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Frank Paniagua</Contact>
+        <LastInvoiceDate>7/3/1989 3:32:49 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>2315</CustNo>
+        <Company>Divers of Corfu, Inc.</Company>
+        <Addr1>Marmoset Place 54</Addr1>
+        <Addr2></Addr2>
+        <City>Ayios Matthaios</City>
+        <State>Corfu</State>
+        <Zip></Zip>
+        <Country>Greece</Country>
+        <Phone>30-661-88364</Phone>
+        <FAX>30-661-05943</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Charles Lopez</Contact>
+        <LastInvoiceDate>6/13/1994 8:20:32 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>2354</CustNo>
+        <Company>Kirk Enterprises</Company>
+        <Addr1>42 Aqua Lane</Addr1>
+        <Addr2></Addr2>
+        <City>Houston</City>
+        <State>TX</State>
+        <Zip>77079</Zip>
+        <Country>US</Country>
+        <Phone>713-556-6437</Phone>
+        <FAX>713-556-1073</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Rudolph Claus</Contact>
+        <LastInvoiceDate>2/8/1994 2:37:45 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>2975</CustNo>
+        <Company>George Bean &amp; Co.</Company>
+        <Addr1>#73 King Salmon Way</Addr1>
+        <Addr2></Addr2>
+        <City>Lugoff</City>
+        <State>NC</State>
+        <Zip>29078</Zip>
+        <Country>US</Country>
+        <Phone>803-438-2771</Phone>
+        <FAX>803-438-3003</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Bill Wyers</Contact>
+        <LastInvoiceDate>4/6/1994 12:20:54 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>2984</CustNo>
+        <Company>Professional Divers, Ltd.</Company>
+        <Addr1>4734 Melinda St.</Addr1>
+        <Addr2></Addr2>
+        <City>Hoover</City>
+        <State>AL</State>
+        <Zip>32145</Zip>
+        <Country>US</Country>
+        <Phone>205-555-8333</Phone>
+        <FAX>205-555-4054</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Shirley Mathers</Contact>
+        <LastInvoiceDate>5/5/1994 5:18:11 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>3041</CustNo>
+        <Company>Divers of Blue-green</Company>
+        <Addr1>634 Complex Ave.</Addr1>
+        <Addr2></Addr2>
+        <City>Pelham</City>
+        <State>AL</State>
+        <Zip>32145</Zip>
+        <Country>US</Country>
+        <Phone>205-555-7184</Phone>
+        <FAX>205-555-6059</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Nancy Bean</Contact>
+        <LastInvoiceDate>2/28/1994 7:29:34 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>3042</CustNo>
+        <Company>Gold Coast Supply</Company>
+        <Addr1>223-B Houston Place</Addr1>
+        <Addr2></Addr2>
+        <City>Mobile</City>
+        <State>AL</State>
+        <Zip>30696</Zip>
+        <Country>US</Country>
+        <Phone>205-555-2640</Phone>
+        <FAX>205-555-4094</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Elaine Falls</Contact>
+        <LastInvoiceDate>7/12/1994 2:01:44 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>3051</CustNo>
+        <Company>San Pablo Dive Center</Company>
+        <Addr1>1701-D N Broadway</Addr1>
+        <Addr2></Addr2>
+        <City>Santa Maria</City>
+        <State>CA</State>
+        <Zip>95443</Zip>
+        <Country>US</Country>
+        <Phone>823-044-2910</Phone>
+        <FAX>823-044-2990</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Patricia O'Brien</Contact>
+        <LastInvoiceDate>7/21/1994 8:40:05 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>3052</CustNo>
+        <Company>Underwater Sports Co.</Company>
+        <Addr1>351-A Sarasota St.</Addr1>
+        <Addr2></Addr2>
+        <City>San Jose</City>
+        <State>CA</State>
+        <Zip>92195</Zip>
+        <Country>US</Country>
+        <Phone>408-867-0594</Phone>
+        <FAX>408-867-0094</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Dave Walling</Contact>
+        <LastInvoiceDate>9/24/1994 3:07:24 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>3053</CustNo>
+        <Company>American SCUBA Supply</Company>
+        <Addr1>1739 Atlantic Avenue</Addr1>
+        <Addr2></Addr2>
+        <City>Lomita</City>
+        <State>CA</State>
+        <Zip>91770</Zip>
+        <Country>US</Country>
+        <Phone>213-654-0092</Phone>
+        <FAX>213-654-0095</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Lynn Cinciripini</Contact>
+        <LastInvoiceDate>1/4/1995 1:38:47 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>3054</CustNo>
+        <Company>Catamaran Dive ertget</Company>
+        <Addr1>Box 264 Pleasure Point</Addr1>
+        <Addr2></Addr2>
+        <City>Catalina Island</City>
+        <State>CA</State>
+        <Zip>90740</Zip>
+        <Country>US</Country>
+        <Phone>213-223-0941</Phone>
+        <FAX>213-223-2324</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Nicole Dupont</Contact>
+        <LastInvoiceDate>10/20/1994 12:00:28 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>3055</CustNo>
+        <Company>Diver's Grotto</Company>
+        <Addr1>24601 Universal Lane</Addr1>
+        <Addr2></Addr2>
+        <City>Downey</City>
+        <State>CA</State>
+        <Zip>94220</Zip>
+        <Country>US</Country>
+        <Phone>213-432-0093</Phone>
+        <FAX>213-432-4821</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Peter Owen</Contact>
+        <LastInvoiceDate>11/26/1994 5:38:49 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>3151</CustNo>
+        <Company>Fisherman's Eye</Company>
+        <Addr1>PO Box 7542</Addr1>
+        <Addr2></Addr2>
+        <City>Grand Cayman</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>British West Indies</Country>
+        <Phone>809-555-4680</Phone>
+        <FAX>809-555-4689</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Bethan Lewis</Contact>
+        <LastInvoiceDate>8/1/1994 4:39:24 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>3158</CustNo>
+        <Company>Action Diver Supply</Company>
+        <Addr1>Blue Spar Box #3</Addr1>
+        <Addr2></Addr2>
+        <City>St. Thomas</City>
+        <State></State>
+        <Zip>00820</Zip>
+        <Country>US Virgin Islands</Country>
+        <Phone>22-44-500211</Phone>
+        <FAX>22-44-500596</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Marianne Miles</Contact>
+        <LastInvoiceDate>8/29/1993 2:50:55 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>3615</CustNo>
+        <Company>Marina SCUBA Center</Company>
+        <Addr1>PO Box 82438 Zulu 7831</Addr1>
+        <Addr2></Addr2>
+        <City>Caracas</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>Venezuela</Country>
+        <Phone>58-33-66222</Phone>
+        <FAX>58-33-66049</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Stephen Bryant</Contact>
+        <LastInvoiceDate>5/11/1993 8:24:30 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>3984</CustNo>
+        <Company>Blue Glass Happiness</Company>
+        <Addr1>6345 W. Shore Lane</Addr1>
+        <Addr2></Addr2>
+        <City>Santa Monica</City>
+        <State>CA</State>
+        <Zip>90410</Zip>
+        <Country>US</Country>
+        <Phone>213-555-1984</Phone>
+        <FAX>213-555-1995</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Christine Taylor</Contact>
+        <LastInvoiceDate>12/2/1994 12:00:07 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>4312</CustNo>
+        <Company>Divers of Venice</Company>
+        <Addr1>220 Elm Street</Addr1>
+        <Addr2></Addr2>
+        <City>Venice</City>
+        <State>FL</State>
+        <Zip>39224</Zip>
+        <Country>US</Country>
+        <Phone>813-443-2356</Phone>
+        <FAX>813-443-9842</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Simone Green</Contact>
+        <LastInvoiceDate>10/25/1993 8:22:30 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>4531</CustNo>
+        <Company>On-Target SCUBA</Company>
+        <Addr1>7-73763 Nanakawa Road</Addr1>
+        <Addr2></Addr2>
+        <City>Winnipeg</City>
+        <State>Manitoba</State>
+        <Zip>J2R 5T3</Zip>
+        <Country>Canada</Country>
+        <Phone>416-445-0988</Phone>
+        <FAX>416-445-0223</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Bram Phillips</Contact>
+        <LastInvoiceDate>1/9/1994 4:32:48 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>4652</CustNo>
+        <Company>Jamaica Sun, Inc.</Company>
+        <Addr1>PO Box 643</Addr1>
+        <Addr2></Addr2>
+        <City>Runaway Bay</City>
+        <State>Jamaica</State>
+        <Zip></Zip>
+        <Country>West Indies</Country>
+        <Phone>809-555-2746</Phone>
+        <FAX>809-555-0929</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Jonathan West</Contact>
+        <LastInvoiceDate>12/16/1994 5:30:33 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>4684</CustNo>
+        <Company>Underwater Fantasy</Company>
+        <Addr1>PO Box 842</Addr1>
+        <Addr2></Addr2>
+        <City>Ocho Rios</City>
+        <State>Jamaica</State>
+        <Zip></Zip>
+        <Country>West Indies</Country>
+        <Phone>809-555-2214</Phone>
+        <FAX>809-555-2234</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Grant Ainsworth</Contact>
+        <LastInvoiceDate>8/25/1994 6:50:42 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>5132</CustNo>
+        <Company>Princess Island SCUBA</Company>
+        <Addr1>PO Box 32 Waiyevo</Addr1>
+        <Addr2></Addr2>
+        <City>Taveuni</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>Fiji</Country>
+        <Phone>679-311923</Phone>
+        <FAX>679-311203</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Anne Mariachi</Contact>
+        <LastInvoiceDate>12/30/1989 9:20:17 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>5151</CustNo>
+        <Company>Central Underwater Supplies</Company>
+        <Addr1>PO Box 737</Addr1>
+        <Addr2></Addr2>
+        <City>Johannesburg</City>
+        <State></State>
+        <Zip>2042</Zip>
+        <Country>Republic So. Africa</Country>
+        <Phone>27-11-4432458</Phone>
+        <FAX>27-11-4433259</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Maria Eventosh</Contact>
+        <LastInvoiceDate>11/13/1994 1:40:23 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>5163</CustNo>
+        <Company>Safari Under the Sea</Company>
+        <Addr1>PO Box 7456</Addr1>
+        <Addr2></Addr2>
+        <City>Grand Cayman</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>British West Indies</Country>
+        <Phone>809-409-4233</Phone>
+        <FAX>809-409-3002</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Anna Rack</Contact>
+        <LastInvoiceDate>9/15/1993 6:35:30 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>5165</CustNo>
+        <Company>Larry's Diving School</Company>
+        <Addr1>3562 NW Bruce Street</Addr1>
+        <Addr2></Addr2>
+        <City>Milwaukie</City>
+        <State>OR</State>
+        <Zip>96277</Zip>
+        <Country>US</Country>
+        <Phone>503-403-7777</Phone>
+        <FAX>503-403-0059</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Isabelle Neece</Contact>
+        <LastInvoiceDate>5/21/1994 11:02:57 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>5384</CustNo>
+        <Company>Tora Tora Tora</Company>
+        <Addr1>PO Box H-4573</Addr1>
+        <Addr2></Addr2>
+        <City>Nassau</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>Bahamas</Country>
+        <Phone>809-898-0043</Phone>
+        <FAX>809-898-9864</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Kevin Rider</Contact>
+        <LastInvoiceDate>2/5/1995 5:40:46 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>5412</CustNo>
+        <Company>Vashon Ventures</Company>
+        <Addr1>743 Keyhole Court</Addr1>
+        <Addr2></Addr2>
+        <City>Honolulu</City>
+        <State>HI</State>
+        <Zip>92856</Zip>
+        <Country>US</Country>
+        <Phone>532-099-0423</Phone>
+        <FAX>532-099-6654</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Susan Smith</Contact>
+        <LastInvoiceDate>1/18/1994 1:45:50 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>5432</CustNo>
+        <Company>Divers-for-Hire</Company>
+        <Addr1>G.O. P Box 91</Addr1>
+        <Addr2></Addr2>
+        <City>Suva</City>
+        <State></State>
+        <Zip></Zip>
+        <Country>Fiji</Country>
+        <Phone>679-804576</Phone>
+        <FAX>679-059345</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Joe Hatter</Contact>
+        <LastInvoiceDate>1/28/1994 8:02:48 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>5515</CustNo>
+        <Company>Ocean Adventures</Company>
+        <Addr1>PO Box 466 Kihei</Addr1>
+        <Addr2></Addr2>
+        <City>Maui</City>
+        <State>HI</State>
+        <Zip>95736</Zip>
+        <Country>US</Country>
+        <Phone>776-868-9334</Phone>
+        <FAX>776-868-9553</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Paul Still</Contact>
+        <LastInvoiceDate>1/8/1995 4:35:40 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>6215</CustNo>
+        <Company>Underwater SCUBA Company</Company>
+        <Addr1>PO Box Sn 91</Addr1>
+        <Addr2></Addr2>
+        <City>Somerset</City>
+        <State></State>
+        <Zip>SXBN</Zip>
+        <Country>Bermuda</Country>
+        <Phone>809-555-1225</Phone>
+        <FAX>809-555-2445</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Michael Grossman</Contact>
+        <LastInvoiceDate>4/7/1994 11:32:50 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>6312</CustNo>
+        <Company>Aquatic Drama</Company>
+        <Addr1>921 Everglades Way</Addr1>
+        <Addr2></Addr2>
+        <City>Tampa</City>
+        <State>FL</State>
+        <Zip>30643</Zip>
+        <Country>US</Country>
+        <Phone>613-442-7654</Phone>
+        <FAX>613-442-7678</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Gillian Owen</Contact>
+        <LastInvoiceDate>3/25/1989 4:42:52 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>6516</CustNo>
+        <Company>The Diving Company</Company>
+        <Addr1>PO Box 8535</Addr1>
+        <Addr2></Addr2>
+        <City>St. Thomas</City>
+        <State></State>
+        <Zip>00820</Zip>
+        <Country>US Virgin Islands</Country>
+        <Phone>22-44-50098</Phone>
+        <FAX>22-44-09878</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Brian Miles</Contact>
+        <LastInvoiceDate>1/15/1994 12:40:50 PM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>6582</CustNo>
+        <Company>Norwest'er SCUBA Limited</Company>
+        <Addr1>PO Box 6834</Addr1>
+        <Addr2></Addr2>
+        <City>Paget</City>
+        <State></State>
+        <Zip>PSBZ</Zip>
+        <Country>Bermuda</Country>
+        <Phone>778-123-0745</Phone>
+        <FAX>778-123-9705</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Angela Jones</Contact>
+        <LastInvoiceDate>2/3/1995 6:47:30 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>6812</CustNo>
+        <Company>Waterspout SCUBA Center</Company>
+        <Addr1>7865 NE Barber Ct.</Addr1>
+        <Addr2></Addr2>
+        <City>Portland</City>
+        <State>OR</State>
+        <Zip>99271</Zip>
+        <Country>US</Country>
+        <Phone>503-654-2434</Phone>
+        <FAX>503-654-9986</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Richard Houser</Contact>
+        <LastInvoiceDate>10/11/1994 10:11:33 AM</LastInvoiceDate>
+    </customer>
+    <customer>
+        <CustNo>9841</CustNo>
+        <Company>Neptune's Trident Supply</Company>
+        <Addr1>PO Box 129</Addr1>
+        <Addr2></Addr2>
+        <City>Negril</City>
+        <State>Jamaica</State>
+        <Zip></Zip>
+        <Country>West Indies</Country>
+        <Phone>778-897-3546</Phone>
+        <FAX>778-897-6643</FAX>
+        <TaxRate>0</TaxRate>
+        <Contact>Louise Franks</Contact>
+        <LastInvoiceDate>11/1/1995 6:32:05 AM</LastInvoiceDate>
+    </customer>
+</customers>

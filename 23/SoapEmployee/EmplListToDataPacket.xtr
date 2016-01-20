@@ -1,0 +1,14 @@
+<XmlTransformation Version="1.0"><Transform Direction="ToCds"><SelectEach dest="DATAPACKET\ROWDATA\ROW" from="\employeeList\employee"><Select dest="@empname" Optional="1" from=""/><Select dest="@id" from="@id"/></SelectEach></Transform><XmlSchema RootName="employeeList"><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="employeeList" type="employeeListType"/>
+  <xs:complexType name="employeeListType">
+    <xs:sequence>
+      <xs:element name="employee" type="employeeType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="employee" type="employeeType"/>
+  <xs:complexType name="employeeType">
+    <xs:sequence/>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+</xs:schema>]]></XmlSchema><CdsSkeleton/><XslTransform/><Skeleton><![CDATA[<?xml version="1.0"?><DATAPACKET Version="2.0"><METADATA><FIELDS><FIELD attrname="empname" fieldtype="string" WIDTH="19"/><FIELD attrname="id" fieldtype="string" WIDTH="6"/></FIELDS><PARAMS/></METADATA><ROWDATA/><METADATA><FIELDS><FIELD attrname="empname" fieldtype="string" WIDTH="19"/><FIELD attrname="id" fieldtype="string" WIDTH="6"/></FIELDS><PARAMS/></METADATA><ROWDATA/></DATAPACKET>
+]]></Skeleton></XmlTransformation>

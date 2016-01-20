@@ -1,0 +1,43 @@
+object Form1: TForm1
+  Left = 192
+  Top = 107
+  Width = 350
+  Height = 210
+  VertScrollBar.Range = 161
+  HorzScrollBar.Range = 297
+  ActiveControl = Button1
+  Caption = 'QLibComp'
+  Color = clBackground
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object Button1: TButton
+    Left = 56
+    Top = 64
+    Width = 75
+    Height = 25
+    Caption = 'Add'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Left = 40
+    Top = 32
+    Width = 105
+    Height = 21
+    TabOrder = 1
+    Text = 'my name'
+  end
+  object ListBox1: TListBox
+    Left = 176
+    Top = 32
+    Width = 121
+    Height = 129
+    Items.Strings = (
+      'marco'
+      'john'
+      'helen')
+    Rows = 3
+    TabOrder = 2
+  end
+end

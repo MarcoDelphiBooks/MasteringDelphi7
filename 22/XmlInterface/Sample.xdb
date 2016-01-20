@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdb="http://www.borland.com/schemas/delphi/6.0/XMLDataBinding">
+	<xs:element name="books" type="booksType"/>
+	<xs:complexType name="booksType"><xs:annotation>
+			<xs:appinfo xdb:docElement="books"/>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="book" type="bookType" maxOccurs="unbounded"/>
+			<xs:element name="ebook" type="ebookType" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="text" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="bookType"><xs:annotation>
+			<xs:appinfo xdb:repeated="True"/>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="title" type="xs:string"/>
+			<xs:element name="author" type="xs:string" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ebookType"><xs:annotation>
+			<xs:appinfo xdb:repeated="True"/>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="title" type="xs:string"/>
+			<xs:element name="url" type="xs:string"/>
+			<xs:element name="author" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

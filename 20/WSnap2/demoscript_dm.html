@@ -1,0 +1,20 @@
+<!-- #include file="menu.html" -->
+
+<table border=1 cellspacing=0 cellpadding="3">
+<tr>
+<th>&nbsp;</th>
+<% for (j=1;j<=5;j++) { %>
+  <th>Column <%=j %></th>
+<% } %>
+</tr>
+<% for (i=1;i<=5;i++) { %>
+  <tr><td>Line <%=i %></td>
+  <% for (j=1;j<=5;j++) { %>
+    <td>Value= <%=i*j %></td>
+  <% } %>
+  </tr>
+<% } %>
+</table>
+
+</body>
+</html>

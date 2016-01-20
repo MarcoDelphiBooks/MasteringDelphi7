@@ -1,0 +1,50 @@
+<!--
+********************************************************************
+*  WANT - A build management tool.                                 *
+*  Copyright (c) 2001 Juancarlo Anez, Caracas, Venezuela.          *
+*  All rights reserved.                                            *
+*  See http://www.suigeneris.org/want/ for details.                *
+*                                                                  *
+********************************************************************
+-->
+<project
+  name="want"
+  basedir="."
+  default="compile">
+
+  <property name="dcu" value="${basedir}/../dcu" />
+  <property name="DelphiFolder" value="C:/Program Files/Borland/Delphi7" />
+
+  <target name="prepare" >
+    <mkdir dir="${dcu}" />
+  </target>
+
+  <target name="compile" depends="prepare">
+
+    <dcc basedir="RaveDetails" source="RaveDetails.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${DelphiFolder}/Rave5/Lib"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="RavePrint" source="RavePrint.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${DelphiFolder}/Rave5/Lib"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="RaveSingle" source="RaveSingle.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${DelphiFolder}/Rave5/Lib"/>
+      </unitpath>
+    </dcc>
+  </target>
+
+</project>

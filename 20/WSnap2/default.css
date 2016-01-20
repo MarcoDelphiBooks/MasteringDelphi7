@@ -1,0 +1,76 @@
+BODY {
+	font-family: Tahoma, Arial, Helvetica;
+	font-size:11pt;
+}
+
+A  {
+	color : Red;
+	text-decoration : none;
+	font-family : Tahoma, Arial;
+	font-weight : bold;
+}
+
+A:Visited  {
+	font-family : Tahoma, Arial;
+}
+
+A:Active  {}
+
+A:Hover  {
+	font-family : Tahoma, Arial;
+	color : Red;
+	text-decoration : underline;
+}
+
+P  {
+	font-family : Tahoma, Arial;
+	font-size : 11pt;
+}
+
+LI  {
+	font-family : Tahoma, Arial;
+	font-size : 11pt;
+}
+
+H1  {
+	font-family : Tahoma, Arial;
+	font-size : 24pt;
+	color : Navy;
+	font-weight : bold;
+	margin-bottom: 10px;
+}
+
+H2  {
+	font-family : Tahoma, Arial;
+	font-size : 16pt;
+	color : Navy;
+	font-weight : bold;
+}
+
+H3  {
+	font-size : 12pt;
+	font-family : Tahoma, Arial;
+	font-weight : bold;
+	color : Navy;
+}
+
+TABLE  {
+	font-family : Tahoma, Arial;
+	font-size : 11pt;
+}
+
+TD  {
+	font-family : Tahoma, Arial;
+	font-size : 10pt;
+}
+
+TH  {
+	font-weight : bold;
+	color : Black;
+	font-size : 13pt;
+	text-align : left;
+}
+
+PRE  {
+	font-size : 11pt;
+}

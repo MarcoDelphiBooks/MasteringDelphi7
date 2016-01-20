@@ -1,0 +1,109 @@
+<!--
+********************************************************************
+*  WANT - A build management tool.                                 *
+*  Copyright (c) 2001 Juancarlo Anez, Caracas, Venezuela.          *
+*  All rights reserved.                                            *
+*  See http://www.suigeneris.org/want/ for details.                *
+*                                                                  *
+********************************************************************
+-->
+<project
+  name="want"
+  basedir="."
+  default="compile">
+
+  <property name="dcu" value="${basedir}/../dcu" />
+
+  <target name="prepare" >
+    <mkdir dir="${dcu}" />
+  </target>
+
+  <target name="compile" depends="prepare">
+
+    <dcc basedir="Mdpack" source="Mdpack.dpk">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+
+    <echo message="You have to compile MdDespk/MdDespk.dpk manually"/>
+    
+<!-- I have problem compiling this package with dependencies...
+   <dcc basedir="MdDespk" source="MdDesPk.dpk">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+        <include  name="${basedir}/MdPack/" />
+      </unitpath>
+    </dcc>    -->
+    <dcc basedir="SoundB" source="SoundB.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="ListTest" source="ListTest.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="ListDialDemo" source="ListDialDemo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+        <include  name="${basedir}/MdPack/" />
+      </unitpath>
+    </dcc>
+    <dcc basedir="FontBoxDemo" source="FontBoxDemo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="ArrowDemo" source="ArrowDemo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="ActiveB" source="ActiveB.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="FramedClock" source="FrameClock.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+        <include  name="${basedir}/MdPack/" />
+      </unitpath>
+    </dcc>
+    <dcc basedir="CMNTest" source="CMNTest.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+  </target>
+
+</project>

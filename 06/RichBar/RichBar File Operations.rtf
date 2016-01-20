@@ -1,0 +1,161 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033\deflangfe1033{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\froman\fprq2\fcharset0 Times New Roman;}{\f2\fmodern\fprq1\fcharset0 Courier New;}{\f3\fswiss\fprq2\fcharset0 Helvetica;}{\f4\fnil\fprq2\fcharset2 Wingdings;}{\f5\fnil\fprq2\fcharset77 Zapf Dingbats;}{\f6\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red255\green0\blue0;}
+\viewkind4\uc1\pard\nowidctlpar\qc\cf1\b\f0\fs64 The RichBar Example\fs36 
+\par 
+\par \pard\nowidctlpar\fs20 An introduction to the basic features of the RichBar example, discussed in Chapter 6 of the book "Mastering Delphi 7". Written and copyrighted by Marco Cant\'f9.\cf0 
+\par \b0\f1\fs22 
+\par This document explains how do you create a simple editor based on the RichEdit control, using Delphi 6. The program has a toolbar and implements a number of features, including a complete scheme for opening and saving the text files, discussed in this document. In fact, we want to be able to ask the user to save any modified file before opening a new one, to avoid losing any changes. Sounds like a professional application, doesn't it?
+\par 
+\par \b\f0\fs28 File Operations
+\par \b0\f1\fs22 
+\par The most complex part of this program is implementing the commands of the File pull-down menu-New, Open, Save, and Save As. In each case, we need to track whether the current file has changed, saving the file only if it has. We should prompt the user to save the file each time the program creates a new file, loads an existing one, or terminates.
+\par To accomplish this, I've added a field, a property, and three public methods to the class describing the form of the application:
+\par \f2\fs18 
+\par   \b private
+\par \b0     FModified: Boolean;
+\par     FileName: string;
+\par     procedure SetModified(const Value: Boolean);
+\par     property Modified: Boolean read FModified write SetModified;
+\par \b   public
+\par \b0     function SaveChanges: Boolean;
+\par     function Save: Boolean;
+\par     function SaveAs: Boolean;
+\par \f1\fs22 
+\par The \f2 FileName\f1  string and the \f2 Modified\f1  property are set when the form is created, by executing the code used to define a new file. These vales are later changed when a new file is loaded or the user renames a file with the Save As command. Here is the startup code:
+\par \b\f2\fs18 
+\par procedure \b0 TFormRichNote.FormCreate(Sender: TObject);
+\par \b begin
+\par \b0   Application.Title := Caption;
+\par   NewExecute (\b Self\b0 );
+\par \b end\b0 ;
+\par \f1\fs22 
+\par The value of the flag changes as soon as you type new characters in the RichEdit control (in its \f2 OnChange\f1  event handler):
+\par \b\f2\fs18 
+\par procedure \b0 TFormRichNote.RichEdit1Change(Sender: TObject);
+\par \b begin
+\par \b0   \i // enables save operations
+\par \i0   Modified := True;
+\par \b end\b0 ;
+\par \f1\fs22 
+\par When a new file is created, the program checks whether the text has been modified. If so, it calls the \f2 SaveChanges\f1  function, which asks the user whether to save the changes, discard them, or skip the current operation:
+\par \b\f2\fs18 
+\par procedure\b0  TFormRichNote.New1Click(Sender: TObject);
+\par \b begin
+\par \b0   \b if not \b0 Modified \b or \b0 SaveChanges \b then\b0 
+\par   \b begin
+\par \b0     RichEdit1.Text := '';
+\par     Modified := False;
+\par     FileName := '';
+\par     Caption := 'RichNote - [Untitled]';
+\par   \b end\b0 ;
+\par \b end\b0 ;
+\par \f1\fs22 
+\par If the creation of a new file is confirmed, some simple operations take place, including using \i 'Untitled'\i0  instead of the file name in the form's caption.
+\par 
+\par \pard{\pntext\f6\'B7\tab}{\*\pn\pnlvlblt\pnf6\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\b\f0 Note: Short-Circuit Evaluation. \b0 The expression \f2 if not Modified or SaveChanges then\i\f0  \i0 requires some explanation. By default, Pascal performs what is called "short-circuit evaluation" of complex conditional expressions. The idea is simple: if the expression \f2 not Modified\f0  is true, we are sure that the whole expression is going to be true, and we don't need to evaluate the second expression. In this particular case, the second expression is a function call, and the function is called only if \f2 Modified\f0  is \f2 True\f0 . This behavior of \f2 or\f0  and \f2 and\f0  expressions can be changed by setting a Delphi compiler option called Complete Boolean Eval. You can find it on the Compiler page of the Project Options dialog box.
+\par {\pntext\f6\'B7\tab}\pard{\pntext\f6\'B7\tab}{\*\pn\pnlvlcont\pnf6\pnindent0{\pntxtb\'B7}}\nowidctlpar\f1 
+\par {\pntext\f6\'B7\tab}The message box displayed by the \f2 SaveChanges\f1  function has three options. If the user selects the Cancel button, the function returns \f2 False\f1 . If the user selects No, nothing happens (the file is not saved) and the function returns \f2 True\f1 , to indicate that although we haven't actually saved the file, the requested operation (such as creating a new file) can be accomplished. If the user selects Yes, the file is saved and the function returns \f2 True\f1 .
+\par {\pntext\f6\'B7\tab}In the code of this function, notice in particular the call to the \f2 MessageDlg\f1  function used as the value of a \f2 case\f1  statement:
+\par {\pntext\f6\'B7\tab}\b\f2\fs18 
+\par {\pntext\f6\'B7\tab}function \b0 TFormRichNote.SaveChanges: Boolean;
+\par {\pntext\f6\'B7\tab}\b begin
+\par {\pntext\f6\'B7\tab}\b0   \b case\b0  MessageDlg (
+\par {\pntext\f6\'B7\tab}    \i 'The document '\i0  + filename + \i ' has changed.'\i0  +
+\par {\pntext\f6\'B7\tab}    #13#13 + \i 'Do you want to save the changes?'\i0 ,
+\par {\pntext\f6\'B7\tab}    mtConfirmation, mbYesNoCancel, 0) \b of\b0 
+\par {\pntext\f6\'B7\tab}  idYes:
+\par {\pntext\f6\'B7\tab}\i     // call Save and return its result
+\par {\pntext\f6\'B7\tab}\i0     Result := Save;
+\par {\pntext\f6\'B7\tab}  idNo:
+\par {\pntext\f6\'B7\tab}\i     // don't save and continue
+\par {\pntext\f6\'B7\tab}\i0     Result := True;
+\par {\pntext\f6\'B7\tab}  \b else\b0  \i // idCancel:\i0 
+\par {\pntext\f6\'B7\tab}\i     // don't save and abort operation
+\par {\pntext\f6\'B7\tab}\i0     Result := False;
+\par {\pntext\f6\'B7\tab}  \b end\b0 ;
+\par {\pntext\f6\'B7\tab}\b end\b0 ;
+\par {\pntext\f6\'B7\tab}
+\par {\pntext\f6\'B7\tab}\pard{\pntext\f6\'B7\tab}{\*\pn\pnlvlblt\pnf6\pnindent360{\pntxtb\'B7}}\nowidctlpar\fi-360\li360\b\f0\fs22 Note\b0 : In the MessageDlg call above, I've added explicit newline characters (\f2 #13\f0 ) to improve the readability of the output. As an alternative to using a numeric character constant, you can call \f2 Chr(13)\f0 .\f3\fs24 
+\par {\pntext\f6\'B7\tab}\pard\nowidctlpar\f1\fs22 
+\par To actually save the file, another function is invoked: \f2 Save\f1 . This method saves the file if it already has a proper file name or asks the user to enter a name, calling the \f2 SaveAs\f1  functions. These are two more internal functions, not directly connected with menu items:
+\par 
+\par \b\f2\fs18 function\b0  TFormRichNote.Save: Boolean;
+\par \b begin
+\par \b0   \b if\b0  Filename = \i ''\i0  \b then\b0 
+\par     Result := SaveAs \i // ask for a file name\i0 
+\par \b   else
+\par   begin
+\par \b0     RichEdit1.Lines.SaveToFile (FileName);
+\par     Modified := False;
+\par     Result := True;
+\par \b   end;
+\par end\b0 ;
+\par 
+\par \b function \b0 TFormRichNote.SaveAs: Boolean;
+\par \b begin
+\par \b0   SaveDialog1.FileName := Filename;
+\par   \b if\b0  SaveDialog1.Execute \b then\b0 
+\par   \b begin
+\par \b0     Filename := SaveDialog1.FileName;
+\par     Save;
+\par     Caption := \i 'RichNote - '\i0  + Filename;
+\par     Result := True;
+\par   \b end
+\par \b0   \b else
+\par \b0     Result := False;
+\par \b end\b0 ;
+\par \f1\fs22 
+\par I use two functions to perform the Save and SaveAs operations for completeness, even if the RichBar program has only a save button, and not a Save As button. The MdEdit version in Chapter 8 will offer this extra feature. Moreover, the save button is enabled only if the file has not been modified, as indicated in the \f2 SetModified\f1  method:
+\par \b\f2\fs18 
+\par procedure \b0 TFormRichNote.SetModified(\b const\b0  Value: Boolean);\b 
+\par begin
+\par \b0   FModified := Value;
+\par   tbtnSave.Enabled := Modified;
+\par \b end;
+\par \b0\f1\fs22 
+\par Opening a file is much simpler. Before loading a new file, the program checks whether the current file has changed, asking the user to save it with the \f2 SaveChanges\f1  function, as before. The \f2 OpenExecute\f1  method is based on the OpenDialog component, another default dialog box provided by Windows and supported by Delphi:
+\par \b\f2\fs18 
+\par procedure\b0  TFormRichNote.OpenExecute(Sender: TObject);
+\par \b begin
+\par \b0   \b if not \b0 Modified \b or \b0 SaveChanges \b then\b0 
+\par     \b if \b0 OpenDialog1.Execute \b then\b0 
+\par     \b begin
+\par \b0       Filename := OpenDialog1.FileName;
+\par       RichEdit1.Lines.LoadFromFile (FileName);
+\par       Modified := False;
+\par       Caption := \i 'RichNote - '\i0  + FileName;
+\par     \b end\b0 ;
+\par \b end\b0 ;
+\par \f1\fs22 
+\par The only other detail related to file operations is that both the OpenDialog and SaveDialog components of the form have a particular value for their \f2 Filter\f1  and \f2 DefaultExt\f1  properties, as you can see in the following fragment from the textual description of the form:
+\par \b\f2\fs18 
+\par object \b0 OpenDialog1: TOpenDialog
+\par   DefaultExt = \i 'rtf'\i0 
+\par   FileEditStyle = fsEdit
+\par   Filter = \i 'Rich Text File (*.rtf)|*.rtf|Any file (*.*)|*.*'\i0 
+\par   Options = [ofHideReadOnly, ofPathMustExist,ofFileMustExist]
+\par \b end
+\par \b0\f1\fs22 
+\par The string used for the \f2 Filter\f1  property contains four pairs of substrings, separated by the \f2 |\f1  symbol. Each pair has a description of the type of file that will appear in the File Open or File Save dialog box, and the filter to be applied to the files in the directory, such as \f2 *.RTF\f1 . To set the filters in Delphi, you can simply invoke the editor of this property, which displays a list with two columns.
+\par The file-related methods above are also called from the \f2 FormCloseQuery\f1  method (the handler of the \f2 OnCloseQuery\f1  event), which is called each time the user tries to close the form, terminating the program. We can make this happen in various ways-by double-clicking on the system menu icon, selecting the system menu's Close command, pressing the Alt+F4 keys, or calling the \f2 Close\f1  method in the code, as in the File \f4\'d8\f5  \f1 Exit menu command.
+\par In \f2 FormCloseQuery\f1 , you can decide whether or not to actually close the application by setting the \f2 CanClose\f1  parameter, which is passed by reference. Again, if the current file has been modified, we call the \f2 SaveChanges\f1  function and use its return value. Again we can use the short-circuit evaluation technique:
+\par \b\f2\fs18 
+\par procedure\b0  TFormRichNote.FormCloseQuery(Sender: TObject;
+\par   \b var \b0 CanClose: Boolean);
+\par \b begin
+\par \b0   CanClose := \b not \b0 Modified \b or \b0 SaveChanges;
+\par \b end\b0 ;
+\par \f1\fs22 
+\par The last file-related command is the Print command. The RichEdit component includes print capabilities and they are very simple to use. Here is the code, which actually produces a very nice printout:
+\par \b\f2\fs18 
+\par procedure \b0 TFormRichNote.PrintExecute (Sender: TObject);
+\par \b begin
+\par \b0   RichEdit1.Print (FileName);
+\par \b end\b0 ;
+\par 
+\par \b\f0\fs28 Conclusion
+\par \b0\f1\fs22 
+\par As mentioned at the beginning, the file support provided by this example is rather complex. This is something you'll probably need to handle in any file-related application. As this was too long for inclusion in the printed "Mastering Delphi 6," I've decided to place it within the source code, instead of skipping it altogether. You can now get back to the book (mainly Chapters 7 and 8) to see how the example can be extended in a number of different ways.
+\par \lang3081\fs18 
+\par }
+ 

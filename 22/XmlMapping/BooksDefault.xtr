@@ -1,0 +1,46 @@
+<XmlTransformation Version="1.0"><Transform Direction="ToCds" DataEncoding="UTF-8"><SelectEach dest="DATAPACKET\ROWDATA\ROW" from="\books"><SelectEach dest="book\ROWbook" from="\book"><Select dest="@title" from="\title"/><Select dest="@author" from="\author"/></SelectEach><Select dest="@text" from="@text"/><SelectEach dest="ebook\ROWebook" from="\ebook"><Select dest="@title" from="\title"/><Select dest="@url" from="\url"/><Select dest="@author" from="\author"/></SelectEach></SelectEach></Transform><XmlSchema RootName="books"><![CDATA[<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="books" type="booksType"/>
+  <xs:complexType name="booksType">
+    <xs:sequence>
+      <xs:element name="book" type="bookType" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="ebook" type="ebookType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="text" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="book" type="bookType"/>
+  <xs:complexType name="bookType">
+    <xs:sequence>
+      <xs:element name="title" type="titleType"/>
+      <xs:element name="author" type="authorType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="title" type="titleType"/>
+  <xs:simpleType name="titleType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="author" type="authorType"/>
+  <xs:simpleType name="authorType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="ebook" type="ebookType"/>
+  <xs:complexType name="ebookType">
+    <xs:sequence>
+      <xs:element name="title" type="titleType"/>
+      <xs:element name="url" type="urlType"/>
+      <xs:element name="author" type="authorType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="title" type="titleType"/>
+  <xs:simpleType name="titleType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="url" type="urlType"/>
+  <xs:simpleType name="urlType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+  <xs:element name="author" type="authorType"/>
+  <xs:simpleType name="authorType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+</xs:schema>]]></XmlSchema><CdsSkeleton/><XslTransform/><Skeleton><![CDATA[<?xml version="1.0"?><DATAPACKET Version="2.0"><METADATA><FIELDS><FIELD attrname="text" fieldtype="string" WIDTH="5"/><FIELD attrname="book" fieldtype="nested"><FIELDS><FIELD attrname="title" fieldtype="string" WIDTH="27"/><FIELD attrname="author" fieldtype="string" WIDTH="6"/></FIELDS><PARAMS/></FIELD><FIELD attrname="ebook" fieldtype="nested"><FIELDS><FIELD attrname="title" fieldtype="string" WIDTH="27"/><FIELD attrname="url" fieldtype="string" WIDTH="25"/><FIELD attrname="author" fieldtype="string" WIDTH="6"/></FIELDS><PARAMS/></FIELD></FIELDS><PARAMS/></METADATA><ROWDATA/></DATAPACKET>
+]]></Skeleton></XmlTransformation>

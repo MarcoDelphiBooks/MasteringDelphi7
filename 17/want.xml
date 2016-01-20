@@ -1,0 +1,102 @@
+<!--
+********************************************************************
+*  WANT - A build management tool.                                 *
+*  Copyright (c) 2001 Juancarlo Anez, Caracas, Venezuela.          *
+*  All rights reserved.                                            *
+*  See http://www.suigeneris.org/want/ for details.                *
+*                                                                  *
+********************************************************************
+-->
+<project
+  name="want"
+  basedir="."
+  default="compile">
+
+  <property name="dcu" value="${basedir}/../dcu" />
+
+  <target name="prepare" >
+    <mkdir dir="${dcu}" />
+  </target>
+
+  <target name="compile" depends="prepare">
+
+    <dcc basedir="MdDataPack" source="MdDataPack.dpk">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+    </dcc>
+    <dcc basedir="ObjDataset" source="ObjDataSetDemo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="RepProgr" source="RepProgr.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="DbTrack" source="DbTrack.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="DbProgr" source="DbProgr.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="ViewGrid" source="ViewGrid.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="StreamDsDemo" source="StreamDsDemo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="DirDemo" source="DirDemoNoShell.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="DirDemo" source="DirDemo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+    <dcc basedir="GridDemo" source="GridDemo.dpr">
+      <dcuoutput path="${dcu}"/>
+      <build     value="true"/>
+      <optimize  value="true"/>
+      <unitpath>
+        <include  name="${dcu}"/>
+      </unitpath>
+    </dcc>
+  </target>
+
+</project>

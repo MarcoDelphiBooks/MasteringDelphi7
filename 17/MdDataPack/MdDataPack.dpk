@@ -1,0 +1,47 @@
+package MdDataPack;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'Mastering Delphi Database Package'}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl,
+  Vcldb,
+  Vclx,
+  rtl,
+  dbrtl;
+
+contains
+  MdTrack in 'MdTrack.pas',
+  MdProgr in 'MdProgr.pas',
+  MdRepPr in 'MdRepPr.pas',
+  MdRView in 'MdRView.pas',
+  MdDbGrid in 'MdDbGrid.pas',
+  MdDsStream in 'MdDsStream.pas',
+  MdDsCustom in 'MdDsCustom.pas',
+  MdDsDir in 'MdDsDir.pas',
+  MdDsList in 'MdDsList.pas',
+  MdDsObjects in 'MdDsObjects.pas';
+
+end.

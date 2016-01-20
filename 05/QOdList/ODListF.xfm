@@ -1,0 +1,43 @@
+object ODListForm: TODListForm
+  Left = 242
+  Top = 121
+  Width = 423
+  Height = 442
+  ActiveControl = ListBox1
+  Caption = 'Owner-draw Listbox'
+  Color = clButton
+  Font.Color = clText
+  Font.Height = 11
+  Font.Name = 'MS Sans Serif'
+  Font.Pitch = fpVariable
+  Font.Style = []
+  Font.Weight = 40
+  ParentFont = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  TextWidth = 6
+  object ListBox1: TListBox
+    Left = 0
+    Top = 0
+    Width = 423
+    Height = 442
+    Style = lbOwnerDrawFixed
+    Align = alClient
+    Font.CharSet = fcsLatin1
+    Font.Color = clBlack
+    Font.Height = 32
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Style = [fsBold]
+    ItemHeight = 37
+    ParentFont = False
+    TabOrder = 0
+    OnDblClick = ListBox1DblClick
+    OnDrawItem = ListBox1DrawItem
+  end
+  object ColorDialog1: TColorDialog
+    Left = 72
+    Top = 48
+  end
+end

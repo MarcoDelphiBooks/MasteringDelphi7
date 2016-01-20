@@ -1,0 +1,45 @@
+<!--
+********************************************************************
+*  WANT - A build management tool.                                 *
+*  Copyright (c) 2001 Juancarlo Anez, Caracas, Venezuela.          *
+*  All rights reserved.                                            *
+*  See http://www.suigeneris.org/want/ for details.                *
+*                                                                  *
+********************************************************************
+-->
+<project
+  name="want"
+  basedir="."
+  default="compile">
+
+  <property name="dccilParams" value="-B -Q" />
+
+  <target name="compile">
+
+    <echo message="GarbageTest.dpr"/>
+    <exec basedir="GarbageTest" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} GarbageTest.dpr"/>
+    </exec>
+
+    <echo message="HelloWin.dpr"/>
+    <exec basedir="HelloWin" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} HelloWin.dpr"/>
+    </exec>
+
+    <echo message="DestructorTest.dpr"/>
+    <exec basedir="DestructorTest" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} DestructorTest.dpr"/>
+    </exec>
+
+    <echo message="Delegate.dpr"/>
+    <exec basedir="Delegate" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} Delegate.dpr"/>
+    </exec>
+
+    <echo message="HelloWorld.dpr"/>
+    <exec basedir="HelloWorld" executable="dccil.exe" os="Windows 2000">
+      <arg value="${dccilParams} HelloWorld.dpr"/>
+    </exec>
+  </target>
+
+</project>

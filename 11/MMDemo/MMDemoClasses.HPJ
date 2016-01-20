@@ -1,0 +1,16 @@
+[OPTIONS]
+TITLE=unit MMDemoClasses
+CONTENTS=hlp_contents
+COMPRESS=TRUE
+
+[CONFIG]
+;remove createbuttons after all ! footnotes are removed from
+;CreateButton("idh_butn_map", "&Map", "JI(`TPW.HLP', `map')")
+;CreateButton("up", "&Up", "JI(`tpw.hlp', `winapi31')")
+;CreateButton("grp", "&Group", "JI(`tpw.hlp', `winapi31')")
+;CreateButton("AppBuilder", "App&Builder", "JumpContents(`appbuild.hlp')")
+;CreateButton("API", "A&PI", "JumpContents(`winapi.hlp')")
+
+
+[FILES]
+E:\books\md7code\11\MMDemo\MMDemoClasses.RTF

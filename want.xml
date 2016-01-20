@@ -1,0 +1,102 @@
+<!--
+********************************************************************
+*  WANT - A build management tool.                                 *
+*  Copyright (c) 2001 Juancarlo Anez, Caracas, Venezuela.          *
+*  All rights reserved.                                            *
+*  See http://www.suigeneris.org/want/ for details.                *
+*                                                                  *
+********************************************************************
+-->
+<project
+  name="want"
+  basedir="."
+  default="compileall">
+
+  <target name="compileall">
+
+    <echo message="Compiling Mastering Delphi 7 source code"/>
+
+    <echo message="Compiling Chapter 1"/>
+    <want dir="01"/>
+    
+    <echo message="Compiling Chapter 2"/>
+    <want dir="02"/>
+    
+    <echo message="Compiling Chapter 3"/>
+    <want dir="03"/>
+    
+    <echo message="Compiling Chapter 4"/>
+    <want dir="04"/>
+    
+    <echo message="Compiling Chapter 5"/>
+    <want dir="05"/>
+    
+    <echo message="Compiling Chapter 6"/>
+    <want dir="06"/>
+    
+    <echo message="Compiling Chapter 7"/>
+    <want dir="07"/>
+    
+    <echo message="Compiling Chapter 8"/>
+    <want dir="08"/>
+    
+    <echo message="Compiling Chapter 9"/>
+    <want dir="09"/>
+    
+    <echo message="Compiling Chapter 10"/>
+    <want dir="10"/>
+    
+    <echo message="Compiling Chapter 11"/>
+    <want dir="11"/>
+    
+    <echo message="Compiling Chapter 12"/>
+    <want dir="12"/>
+    
+    <echo message="Compiling Chapter 13"/>
+    <want dir="13"/>
+    
+    <echo message="Compiling Chapter 14"/>
+    <want dir="14"/>
+    
+    <echo message="Compiling Chapter 15"/>
+    <want dir="15"/>
+    
+    <echo message="Compiling Chapter 16"/>
+    <want dir="16"/>
+    
+    <echo message="Compiling Chapter 17"/>
+    <want dir="17"/>
+    
+    <echo message="Compiling Chapter 18"/>
+    <want dir="18"/>
+    
+    <echo message="Compiling Chapter 19"/>
+    <want dir="19"/>
+    
+    <echo message="Compiling Chapter 20"/>
+    <want dir="20"/>
+    
+    <echo message="Compiling Chapter 21"/>
+    <want dir="21"/>
+    
+    <echo message="Compiling Chapter 22"/>
+    <want dir="22"/>
+    
+    <echo message="Compiling Chapter 23"/>
+    <want dir="23"/>
+
+    <echo message="To compile Chapters 24 and 25 you need to have the Dephi for .NET Preview"/>
+    <echo message="Comment/uncomment the final portion of this script"/>
+
+    <echo message="Compiling Chapter 24"/>
+    <want dir="24"/>
+
+    <echo message="Compiling Chapter 25"/>
+    <want dir="25"/>
+
+    <echo message="-------------------"/>
+    <echo message="Finished compiling!"/>
+
+  </target>
+
+</project>

@@ -1,0 +1,65 @@
+object formMain: TformMain
+  Left = 0
+  Top = 0
+  Width = 618
+  Height = 424
+  Background.Fixed = False
+  HandleTabs = False
+  SupportedBrowsers = [brIE, brNetscape6]
+  OnCreate = IWAppFormCreate
+  DesignLeft = 287
+  DesignTop = 138
+  object IWDynGrid1: TIWDynGrid
+    Left = 0
+    Top = 0
+    Width = 618
+    Height = 424
+    Align = alClient
+    ZIndex = 0
+    BorderColors.Color = clNone
+    BorderColors.Light = clNone
+    BorderColors.Dark = clNone
+    BackgroundColor = clNone
+    TitleCell.BorderColors.Color = clNone
+    TitleCell.BorderColors.Light = clNone
+    TitleCell.BorderColors.Dark = clNone
+    TitleCell.Color = clNone
+    TitleCell.BorderSize = 0
+    TitleCell.BackgroundColor = clNone
+    TitleCell.Font.Color = clNone
+    TitleCell.Font.Enabled = True
+    TitleCell.Font.Size = 10
+    TitleCell.Font.Style = []
+    FilterCell.BorderColors.Color = clNone
+    FilterCell.BorderColors.Light = clNone
+    FilterCell.BorderColors.Dark = clNone
+    FilterCell.Color = clNone
+    FilterCell.BorderSize = 0
+    FilterCell.BackgroundColor = clNone
+    FilterCell.Font.Color = clNone
+    FilterCell.Font.Enabled = True
+    FilterCell.Font.Size = 10
+    FilterCell.Font.Style = []
+    DataCell.BorderColors.Color = clNone
+    DataCell.BorderColors.Light = clNone
+    DataCell.BorderColors.Dark = clNone
+    DataCell.Color = clNone
+    DataCell.BorderSize = 0
+    DataCell.BackgroundColor = clNone
+    DataCell.Font.Color = clNone
+    DataCell.Font.Enabled = True
+    DataCell.Font.Size = 10
+    DataCell.Font.Style = []
+    Data = IWClientSideDatasetDBLink1
+    BorderSize = 0
+  end
+  object DataSource1: TDataSource
+    Left = 72
+    Top = 88
+  end
+  object IWClientSideDatasetDBLink1: TIWClientSideDatasetDBLink
+    DataSource = DataSource1
+    Left = 72
+    Top = 168
+  end
+end

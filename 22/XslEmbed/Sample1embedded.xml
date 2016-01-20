@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sample1embedded.xsl"?>
+
+<books text="Books">
+  <book>
+    <title>Mastering Delphi 5</title>
+    <author>Cantu</author>
+  </book>
+  <book>
+    <title>DDH</title>
+    <author>Cantu</author>
+    <author>Gooch</author>
+  </book>
+  <book>
+    <title>MD4</title>
+    <author>Cantu</author>
+  </book>
+  <book>
+    <title>Delphi COM Programming</title>
+    <author>Harmon</author>
+  </book>
+  <book>
+    <title>Thiking in C++</title>
+    <author>Eckel</author>
+  </book>
+  <ebook>
+    <title>Essential Pascal</title>
+    <url>http://www.marcocantu.com</url>
+    <author>Cantu</author>
+  </ebook>
+  <ebook>
+    <title>Thinking in Java</title>
+    <url>http://www.mindview.com</url>
+    <author>Bruce Eckel</author>
+  </ebook>
+</books>

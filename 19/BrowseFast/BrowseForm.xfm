@@ -1,0 +1,115 @@
+object Form1: TForm1
+  Left = 236
+  Top = 125
+  Width = 718
+  Height = 526
+  VertScrollBar.Range = 29
+  ActiveControl = ComboURL
+  Caption = 'BrowseFast'
+  Color = clBackground
+  PixelsPerInch = 75
+  TextHeight = 13
+  TextWidth = 6
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 0
+    Width = 718
+    Height = 29
+    ButtonHeight = 20
+    ButtonWidth = 34
+    Caption = 'ToolBar1'
+    ShowCaptions = True
+    TabOrder = 0
+    object ToolButton4: TToolButton
+      Left = 397
+      Top = 4
+      Height = 20
+      Caption = 'Go'
+      ImageIndex = 3
+      OnClick = ToolButton4Click
+    end
+    object ComboURL: TComboBox
+      Left = 1
+      Top = 4
+      Width = 396
+      Height = 21
+      AutoComplete = True
+      ItemHeight = 15
+      Items.Strings = (
+        'http://www.marcocantu.com'
+        'http://www.borland.com'
+        'http://community.borland.com')
+      TabOrder = 1
+      OnKeyPress = ComboURLKeyPress
+    end
+    object ToolButton2: TToolButton
+      Left = 431
+      Top = 4
+      Height = 20
+      Caption = 'Back'
+      ImageIndex = 5
+      OnClick = ToolButton2Click
+    end
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 29
+    Width = 718
+    Height = 497
+    ActivePage = TabSheet1
+    Align = alClient
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'View'
+      object TextBrowser1: TTextBrowser
+        Left = 0
+        Top = 0
+        Width = 710
+        Height = 448
+        Align = alClient
+        TabOrder = 0
+        OnClick = TextBrowser1Click
+        OnHighlightText = TextBrowser1HighlightText
+      end
+      object StatusBar1: TStatusBar
+        Left = 0
+        Top = 448
+        Width = 710
+        Height = 19
+        Panels = <>
+        SimplePanel = True
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Source'
+      ImageIndex = 1
+      object Memo1: TMemo
+        Left = 0
+        Top = 0
+        Width = 710
+        Height = 467
+        Align = alClient
+        ReadOnly = True
+        TabOrder = 0
+      end
+    end
+  end
+  object IdHTTP1: TIdHTTP
+    MaxLineAction = maException
+    ReadTimeout = 0
+    AllowCookies = True
+    HandleRedirects = True
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = 0
+    Request.ContentRangeEnd = 0
+    Request.ContentRangeStart = 0
+    Request.ContentType = 'text/html'
+    Request.Accept = 'text/html, */*'
+    Request.BasicAuthentication = False
+    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 48
+    Top = 80
+  end
+end

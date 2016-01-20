@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 172
+  Top = 113
+  Width = 696
+  Height = 480
+  VertScrollBar.Range = 465
+  HorzScrollBar.Range = 673
+  ActiveControl = Memo1
+  Caption = 'HtmlEdit'
+  Color = clBackground
+  OnCreate = FormCreate
+  PixelsPerInch = 75
+  TextHeight = 13
+  TextWidth = 6
+  object Memo1: TMemo
+    Left = 24
+    Top = 8
+    Width = 649
+    Height = 177
+    Lines.Strings = (
+      '<h1>Test Html</h1>'
+      '<p>Test text <b>with bold</b><br>'
+      '<p>and more test on a new line, followed by a table'
+      '<p>'
+      '<table border=1>'
+      
+        '<tr><td>cell 1</td><td>cell b</td><td>cell</td><td>cell</td></tr' +
+        '>'
+      
+        '<tr><td>cell 2</td><td>cell b</td><td>cell</td><td>cell</td></tr' +
+        '>'
+      
+        '<tr><td>cell 3</td><td>cell b</td><td>cell</td><td>cell</td></tr' +
+        '>'
+      
+        '<tr><td>cell 4</td><td>cell b</td><td>cell</td><td>cell</td></tr' +
+        '>'
+      
+        '<tr><td>cell 5</td><td>cell b</td><td>cell</td><td>final cell</t' +
+        'd></tr>'
+      '</table>'
+      
+        '<p>and finally a "dead" hyperlink, <a href="http://www.marcocant' +
+        'u.com"> marcocantu.com </a>.')
+    TabOrder = 0
+    OnChange = Memo1Change
+  end
+  object TextViewer1: TTextViewer
+    Left = 24
+    Top = 192
+    Width = 649
+    Height = 273
+    TabOrder = 1
+  end
+end
